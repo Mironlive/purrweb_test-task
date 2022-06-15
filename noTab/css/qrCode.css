@@ -1,0 +1,137 @@
+.qrCode {
+    max-width: 1440px;
+    margin: -450px auto 0 auto;
+}
+
+.qrCode .qrCode-background {
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -700px;
+}
+
+.qrCode .qrCode-background .qrCode-background-flash {
+    width: 100%;
+}
+
+.qrCode .qrCode-background .qrCode-background-notab {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.qrCode .qrCode-background .qrCode-content .qrCode-content-phone img {
+    width: 100%;
+}
+
+.qrCode .qrCode-info {
+    gap: 30px;
+    max-width: 1200px;
+    margin: 300px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qrCode .qrCode-info .title {
+    max-width: 493px;
+}
+
+.qrCode .qrCode-info .text {
+    padding-top: 0;
+    max-width: 292px;
+}
+
+.qrCode .qrCode-background .qrCode-content .qrCode-content-arrow .qrCode-content-text {
+    color: white;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.qrCode .qrCode-background .qrCode-content .qrCode-content-arrow {
+    position: absolute;
+    right: -42px;
+    top: 30%;
+    transform: translateX(100%);
+}
+
+.qrCode .qrCode-background .qrCode-content {
+    position: absolute;
+    max-width: 332px;
+    width: 37%;
+}
+
+.qrCode .qrCode-background .qrCode-content .qrCode-content-phone {
+    position: relative;
+    width: 100%;
+}
+
+@media (max-width: 1400px) {
+    .qrCode .qrCode-background {
+        margin-bottom: -200px;
+    }
+    .qrCode .qrCode-info {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1350px) {
+    .qrCode {
+        margin-top: -200px;
+    }
+}
+
+@media (max-width: 1275px) {
+    .qrCode .qrCode-info {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .qrCode {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        margin-top: 0px;
+    }
+    .qrCode .qrCode-info {
+        margin-bottom: -50px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 130px;
+    }
+    .qrCode .qrCode-info .text {
+        max-width: 490px;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .qrCode .qrCode-background {
+        margin-bottom: 0px;
+    }
+    .qrCode .qrCode-background .qrCode-content .qrCode-content-arrow {
+        position: absolute;
+        right: 10px;
+        top: 90%;
+        transform: translateX(100%);
+    }
+    .qrCode .qrCode-background .qrCode-content .qrCode-content-arrow img {
+        transform: rotate(45deg);
+    }
+    .qrCode .qrCode-info .text {
+        margin-top: -16px;
+        padding-top: 20px;
+    }
+    .qrCode .qrCode-info .title {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+}

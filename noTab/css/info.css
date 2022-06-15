@@ -1,0 +1,248 @@
+.info {
+    overflow: hidden;
+}
+
+.info_content {
+    /*добавил*/
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding-top: 178px;
+    grid-template-columns: repeat(auto-fill, minmax(345px, 1fr));
+    display: grid;
+    grid-gap: 110px;
+    justify-content: space-between;
+}
+
+.info_content_mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 30px; */
+    /* max-width: 503px; */
+    border: 2px white solid;
+    border-radius: 21.37px;
+    height: 312px;
+}
+
+.info_content_mail h4 {
+    color: white;
+    font-family: "Noto Sans";
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.info_content_mail a {
+    position: relative;
+    left: -45px;
+    color: white;
+    font-family: "Noto Sans";
+    font-weight: 400;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.info_content_mail a:hover {
+    text-decoration: none;
+    color: rgba(231, 150, 255, 0.79);
+}
+
+.info_content_login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 30px; */
+    /* max-width: 503px; */
+    border: 2px white solid;
+    border-radius: 21.37px;
+    height: 312px;
+}
+
+.info_content_login h4 {
+    color: white;
+    font-family: "Noto Sans";
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.info_content_login a {
+    position: relative;
+    left: -107px;
+    color: white;
+    font-family: "Noto Sans";
+    font-weight: 400;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.info_content_login a:hover {
+    text-decoration: none;
+    color: rgba(231, 150, 255, 0.79);
+}
+
+.info_mission {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 100px;
+    padding: 0 100px 0 0;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+.info_iphone_mobile {
+    display: none;
+}
+
+.info_mission_text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* max-width: 360px; */
+    left: -8%;
+}
+
+.title {
+    width: 360px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1310px) {
+    .info_iphone_rotate {
+        margin-left: -150px;
+    }
+}
+
+@media (max-width: 1169px) {
+    .info_iphone_rotate {
+        margin-left: -300px;
+    }
+}
+
+@media (max-width: 998px) {
+    .info_content {
+        position: relative;
+        overflow: hidden;
+        padding-top: 70px;
+        grid-template-columns: repeat(auto-fill, minmax(341px, 1fr));
+        display: grid;
+        grid-gap: 30px;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .info_content_mail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* gap: 30px; */
+        width: 100%;
+        /* max-width: 503px; */
+        border: 2px white solid;
+        border-radius: 21.37px;
+        height: 312px;
+    }
+    .info_content_login {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* gap: 30px; */
+        width: 100%;
+        /* max-width: 503px; */
+        border: 2px white solid;
+        border-radius: 21.37px;
+        height: 312px;
+    }
+}
+
+@media (max-width: 978px) {
+    .info_iphone_rotate {
+        margin-left: -450px;
+    }
+}
+
+@media (max-width: 845px) {
+    .info_iphone_rotate {
+        display: none;
+    }
+    .info_iphone_mobile {
+        display: initial;
+    }
+    .info_mission {
+        padding: 110px 100px 0 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info_mission_text {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        max-width: 660px;
+        left: -0%;
+    }
+    .info_mission_mobile {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .text {
+        display: flex;
+    }
+    .title {
+        width: 360px;
+    }
+}
+
+@media (max-width: 768px) {
+    .info_content_mail h4 {
+        font-size: 24px;
+    }
+    .info_content_mail a {
+        font-size: 18px;
+    }
+    .info_content_login h4 {
+        font-size: 24px;
+    }
+    .info_content_login a {
+        font-size: 18px;
+        left: -88px;
+    }
+    .info_content_mail {
+        height: 233px;
+    }
+    .info_content_login {
+        height: 233px;
+    }
+    .text {
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+    .info_mission_text {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 287px;
+        left: -0%;
+        justify-content: center;
+        align-items: center;
+    }
+    .title {
+        width: 287px;
+    }
+    .info_mission_mobile {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        /* padding-top: 50px; */
+    }
+}

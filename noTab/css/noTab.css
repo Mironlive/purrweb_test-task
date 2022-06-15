@@ -1,0 +1,40 @@
+.noTab {
+    max-width: 1440px;
+    margin: -100px auto 0 auto;
+    margin-top: -100px;
+}
+
+.noTab .noTab-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.noTab .noTab-content img {
+    width: 100%;
+}
+
+.noTab .noTab-content-background {
+    z-index: 0;
+    position: relative;
+}
+
+.noTab .noTab-content-display {
+    position: absolute;
+    max-width: 675.46px;
+    z-index: 1;
+}
+
+.noTab .noTab-content-phone {
+    position: absolute;
+    max-width: 858.94px;
+    z-index: 0;
+}
+
+@media (max-width: 850px) {
+    .noTab {
+        display: none;
+    }
+}

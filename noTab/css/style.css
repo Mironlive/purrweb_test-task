@@ -1,0 +1,138 @@
+body {
+    overflow: hidden;
+}
+
+.wrapper {
+    margin: 0 auto;
+    background-color: black;
+}
+
+.section {
+    padding: 0 100px;
+}
+
+@media (max-width: 1025px) {
+    .section {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section {
+        padding: 0 15px;
+    }
+}
+
+.section_nk {
+    padding: 0 54px 0 100px;
+}
+
+@media (max-width: 1025px) {
+    .section_nk {
+        padding: 0 34px 0 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section_nk {
+        padding: 0 0 0 0;
+    }
+}
+
+.title {
+    position: relative;
+    z-index: 10;
+    color: white;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 62px;
+    margin-bottom: 23px;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 16px;
+    }
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+    color: white;
+    font-family: "Noto Sans";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 0px;
+}
+
+@media (max-width: 768px) {
+    .text {
+        font-family: "Noto Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 0px;
+    }
+}
+
+.input {
+    border-radius: 10px;
+    padding-left: 23px;
+}
+
+.input.error {
+    border: 2px solid;
+    border-color: #ff0000;
+}
+
+.textarea.error {
+    border: 2px solid;
+    border-color: #ff0000;
+}
+
+::placeholder {
+    color: #bfbfbf;
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+     ::placeholder {
+        color: #bfbfbf;
+        font-family: "Noto Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("../fonts/Avenir/Avenir-Medium.eot");
+    src: url("../fonts/Avenir/Avenir-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir/Avenir-Medium.woff2") format("woff2"), url("../fonts/Avenir/Avenir-Medium.woff") format("woff"), url("../fonts/Avenir/Avenir-Medium.ttf") format("truetype"), url("../fonts/Avenir/Avenir-Medium.svg#Avenir-Medium") format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("../fonts/Avenir/AvenirNextLTProRegular.eot");
+    src: url("../fonts/Avenir/AvenirNextLTProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir/AvenirNextLTProRegular.woff2") format("woff2"), url("../fonts/Avenir/AvenirNextLTProRegular.woff") format("woff"), url("../fonts/Avenir/AvenirNextLTProRegular.ttf") format("truetype"), url("../fonts/Avenir/AvenirNextLTProRegular.svg#AvenirNextLTProRegular") format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+p {
+    position: relative;
+    z-index: 10;
+}

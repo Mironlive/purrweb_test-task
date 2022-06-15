@@ -1,0 +1,114 @@
+.footer {
+    margin: 0 auto;
+    max-width: 1440px;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 155px;
+    padding-bottom: 85px;
+}
+
+.footer .footer-ellipse {
+    position: absolute;
+    z-index: 0;
+    width: 405.99px;
+    height: 411.6px;
+    top: 50%;
+    left: 0%;
+    opacity: 0.8;
+    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+    filter: blur(250px);
+    transform: rotate(5.78deg);
+}
+
+.footer .footer-connect {
+    position: relative;
+    z-index: 1;
+}
+
+.footer .footer-connect .footer-connect-logo {
+    max-width: 81.01px;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.footer .footer-connect .footer-connect-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer-connect .footer-connect-contact p {
+    margin: 0px;
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+
+.footer .footer-connect .copyright {
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    padding-top: 23px;
+}
+
+.footer .footer-links {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    cursor: pointer;
+}
+
+.footer .footer-links a {
+    position: relative;
+    z-index: 5;
+    font-family: "Avenir";
+    font-style: 400;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer .footer-links a:hover {
+    color: rgba(231, 150, 255, 0.79);
+}
+
+@media (max-width: 576px) {
+    .footer {
+        display: flex;
+        padding-top: 0px;
+        padding-bottom: 24px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footer .footer-connect {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .footer-connect .footer-connect-logo {
+        max-width: 81.01px;
+        width: 100%;
+    }
+    .footer .footer-connect .footer-connect-contact {
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        font-size: 14px;
+    }
+    .footer .footer-connect .copyright {
+        font-size: 14px;
+    }
+    .footer .footer-links {
+        padding-top: 64px;
+        padding-bottom: 58px;
+        gap: 14px;
+    }
+}

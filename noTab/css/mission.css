@@ -1,0 +1,194 @@
+    .mission {
+        overflow: hidden;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding-top: 169px;
+    }
+    
+    .mission .mission-card {
+        color: white;
+        font-family: "Noto Sans";
+        font-weight: 700;
+        font-size: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        padding-top: 70px;
+        grid-template-columns: repeat(auto-fill, minmax(345px, 1fr));
+        display: grid;
+        grid-gap: 110px;
+        justify-content: space-between;
+    }
+    
+    .mission .mission-card a {
+        position: relative;
+        color: white;
+        font-family: "Noto Sans";
+        font-weight: 400;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    .mission .mission-card a:hover {
+        text-decoration: none;
+        color: rgba(231, 150, 255, 0.79);
+    }
+    
+    .mission .mission-card .mission-card__mail,
+    .mission .mission-card .mission-card__login {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px white solid;
+        border-radius: 21.37px;
+        height: 312px;
+    }
+    
+    .mission .mission-card .mission-card__text {
+        margin-top: 0px;
+    }
+    
+    .mission .mission-card .mission-card__mail a {
+        left: -45px;
+    }
+    
+    .mission .mission-card .mission-card__login a {
+        left: -107px;
+    }
+    
+    .mission .mission-content {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin-top: 110px;
+    }
+    
+    .mission .mission-content .mission-content-image .mission-content__phone1 {
+        width: 850px;
+    }
+    
+    .mission .mission-content .mission-content-image .mission-content__phone2 {
+        display: none;
+    }
+    
+    .mission .mission-content .mission-info {
+        padding-right: 80px;
+        max-width: 358px;
+        position: relative;
+        justify-content: center;
+    }
+    
+    .mission .mission-content .mission-info .mission-ellipse {
+        position: absolute;
+        top: 60px;
+        right: 240px;
+        margin: 0;
+        width: 100px;
+        height: 100px;
+        background: #F101BF;
+        opacity: 1;
+        filter: blur(85px);
+        z-index: 0;
+    }
+    
+    @media (max-width: 1200px) {
+        .mission .mission-content .mission-content-image .mission-content__phone1 {
+            margin-left: -150px;
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        .mission .mission-content .mission-info {
+            margin-left: -110px;
+            padding-right: 50px;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .mission .mission-content .mission-content-image .mission-content__phone1 {
+            margin-left: -250px;
+        }
+        .mission .mission-card {
+            position: relative;
+            overflow: hidden;
+            padding-top: 70px;
+            grid-template-columns: repeat(auto-fill, minmax(345px, 1fr));
+            display: grid;
+            grid-gap: 30px;
+            justify-items: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .mission .mission-card .mission-card__mail,
+        .mission .mission-card .mission-card__login {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 99%;
+            border: 2px white solid;
+            border-radius: 21.37px;
+            height: 312px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .mission {
+            padding-top: 70px;
+        }
+        .mission .mission-content .mission-info .mission-ellipse {
+            top: 0px;
+            right: 261px;
+            margin: 0;
+            width: 150px;
+            height: 80px;
+            background: #F101BF;
+            opacity: 1;
+            filter: blur(75px);
+        }
+        .mission .mission-card {
+            font-size: 24px;
+        }
+        .mission .mission-card a {
+            font-size: 18px;
+        }
+        .mission .mission-card .mission-card__mail {
+            height: 233px;
+        }
+        .mission .mission-card .mission-card__login {
+            height: 167px;
+        }
+        .mission .mission-card .mission-card__login a {
+            left: -88px;
+        }
+        .mission .mission-content {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .mission .mission-content .mission-content-image {
+            display: grid;
+            justify-content: center;
+            margin-left: -15px;
+        }
+        .mission .mission-content .mission-info {
+            padding: 0 25px 0 25px;
+            margin: 0 auto;
+        }
+        .mission .mission-content .mission-content-image .mission-content__phone2 {
+            display: block;
+            justify-content: center;
+        }
+        .mission .mission-content .mission-content-image .mission-content__phone1 {
+            display: none;
+        }
+    }
+    
+    @media (max-width: 374px) {
+        .mission .mission-card .mission-card__mail,
+        .mission .mission-card .mission-card__login {
+            width: 82%;
+        }
+    }

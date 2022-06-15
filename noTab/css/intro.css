@@ -1,0 +1,237 @@
+.intro {
+    position: relative;
+    z-index: 1;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.intro .intro-content {
+    margin-top: -40px;
+    padding: 0 0 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro .intro-content .intro-content-info {
+    max-width: 643px;
+    min-width: 361px;
+    display: flex;
+    flex-direction: column;
+    gap: 129px;
+    align-items: center;
+}
+
+.intro .intro-content .intro-content-info .intro-content__title {
+    position: relative;
+    z-index: 1;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 64px;
+    color: white;
+}
+
+.intro .intro-content .intro-vector {
+    z-index: 0;
+    position: absolute;
+    z-index: 0;
+    width: 662.63px;
+    height: 783.03px;
+    top: -12%;
+    right: -10%;
+    background: rgba(250, 0, 255, 0.2);
+    filter: blur(250px);
+    transform: rotate(-105.26deg);
+}
+
+.intro .intro-content .intro-content-image {
+    z-index: 1;
+}
+
+.intro .intro-content .intro-content-info .intro-content__text {
+    position: relative;
+    z-index: 2;
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+.intro .intro-content .intro-content-info .intro-content__text .intro-stick {
+    position: absolute;
+    z-index: 1;
+    left: -29%;
+    bottom: -7%;
+}
+
+.intro .intro-content .intro-content-info .intro-content__text .intro-light {
+    position: absolute;
+    z-index: 0;
+    left: -52%;
+    bottom: -63%;
+}
+
+.intro .intro-content .intro-content-image .intro-content__iphone2 {
+    display: none;
+}
+
+.intro .intro-download {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.intro .intro-download .intro-download__text {
+    color: white;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.intro .intro-download .intro-download__buttons {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    gap: 27.97px;
+}
+
+.intro .intro-download .intro-download__buttons .intro-download__button-apple {
+    cursor: pointer;
+}
+
+.intro .intro-download .intro-download__buttons .intro-download__button-google {
+    cursor: pointer;
+}
+
+@media (max-width: 1250px) {
+    .intro .intro-content .intro-content-info .intro-content__text .intro-stick {
+        display: none;
+    }
+    .intro .intro-content .intro-content-info .intro-content__text .intro-light {
+        left: -40%;
+        bottom: -63%;
+    }
+}
+
+@media (max-width: 992px) {
+    .intro-download {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 34px;
+    }
+    .intro .intro-download .intro-download__buttons {
+        display: flex;
+        gap: 28px;
+    }
+}
+
+@media (max-width: 1077px) {
+    .intro .intro-content .intro-content-info .intro-content__text .intro-stick {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro .intro-content {
+        margin-top: -39px;
+        padding: 0 0 0 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .intro .intro-content .intro-vector {
+        z-index: 0;
+        position: absolute;
+        width: 363.95px;
+        height: 430.08px;
+        top: -12%;
+        right: -10%;
+        background: rgba(250, 0, 255, 0.5);
+        filter: blur(250px);
+        transform: rotate(-90.69deg);
+    }
+    .intro .intro-content .intro-content-image .intro-content__iphone2 {
+        display: initial;
+    }
+    .intro .intro-content .intro-content-image .intro-content__iphone1 {
+        display: none;
+    }
+    .intro .intro-content .intro-content-info {
+        max-width: 643px;
+        min-width: 361px;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        align-items: flex-end;
+    }
+    .intro .intro-content .intro-content-info .intro-content__title {
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 35px;
+        color: white;
+    }
+    .intro .intro-content .intro-content-info .intro-content__text {
+        font-size: 16px;
+    }
+    .intro .intro-content .intro-content-info .intro-content__text .intro-stick {
+        display: initial;
+        position: absolute;
+        width: 50px;
+        z-index: 1;
+        left: -29%;
+        bottom: -7%;
+    }
+    .intro .intro-content .intro-content-info .intro-content__text .intro-light {
+        width: 150px;
+        left: -39%;
+        bottom: -5%;
+    }
+}
+
+@media (max-width: 585px) {
+    .intro .intro-content {
+        padding: 0 0 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .intro .intro-content .intro-content-info {
+        min-width: 240px;
+        gap: 24px;
+        align-items: flex-start;
+    }
+    .intro .intro-download .intro-download__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .intro .intro-content .intro-content-info .intro-content__text .intro-stick {
+        display: none;
+    }
+    .intro .intro-content .intro-content-info .intro-content__text .intro-light {
+        width: 150px;
+        left: -11%;
+        bottom: -15%;
+    }
+    .intro .intro-download .intro-download__buttons .intro-download__button-apple {
+        max-width: 184px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 426px) {
+    .intro .intro-content .intro-content-image {
+        margin-left: -53px;
+    }
+    .intro .intro-content .intro-content-info {
+        min-width: 257px;
+        max-width: 240px;
+        gap: 24px;
+    }
+}

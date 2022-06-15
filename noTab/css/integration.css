@@ -1,0 +1,180 @@
+.integration {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 200px;
+    grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+    display: grid;
+    grid-gap: 160px;
+    justify-content: space-between;
+}
+
+.integration .integration-ellipse {
+    position: absolute;
+    width: 326.21px;
+    height: 238.35px;
+    top: 30%;
+    left: -9%;
+    filter: blur(250px);
+    transform: rotate(5.78deg);
+    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+}
+
+.integration .integration-info {
+    position: relative;
+    z-index: 1;
+}
+
+.integration .integration-content {
+    position: relative;
+    height: 516px;
+}
+
+.integration .integration-content .integration-content__graphic1 {
+    position: absolute;
+    z-index: 0;
+    max-width: 192.22px;
+    width: 100%;
+    right: 505px;
+    top: 278px;
+}
+
+.integration .integration-content .integration-content__graphic2 {
+    position: absolute;
+    z-index: 1;
+    max-width: 252.24px;
+    width: 100%;
+    right: 146px;
+    top: 5px;
+}
+
+.integration .integration-content .integration-content__graphic3 {
+    position: absolute;
+    z-index: 6;
+    max-width: 193.85px;
+    width: 100%;
+    right: 252px;
+    top: 283px;
+}
+
+.integration .integration-content .integration-content__graphic4 {
+    position: absolute;
+    z-index: 3;
+    max-width: 193.85px;
+    width: 100%;
+    right: 325px;
+    top: 373px;
+}
+
+.integration .integration-content .integration-content__graphic5 {
+    position: absolute;
+    z-index: 4;
+    max-width: 182.49px;
+    width: 100%;
+    right: 85px;
+    top: 180px;
+}
+
+.integration .integration-content .integration-content__graphic6 {
+    position: absolute;
+    z-index: 5;
+    max-width: 233.24px;
+    width: 100%;
+    right: 325px;
+    top: 185px;
+}
+
+.integration .integration-content .integration-content__graphic7 {
+    position: absolute;
+    z-index: 2;
+    max-width: 281.13px;
+    width: 100%;
+    top: 450px;
+    right: 2px;
+}
+
+@media (max-width: 1180px) {
+    .integration .integration-info {
+        margin-bottom: -110px;
+    }
+}
+
+@media (max-width: 798px) {
+    .integration .integration-info {
+        display: grid;
+        align-items: end;
+        justify-content: center;
+    }
+    .integration .integration-content .integration-content__graphic1 {
+        display: none;
+    }
+    .integration .integration-content .integration-content__graphic2 {
+        left: 0px;
+        top: 271px;
+    }
+    .integration .integration-content .integration-content__graphic3 {
+        right: 159px;
+        top: 81px;
+    }
+    .integration .integration-content .integration-content__graphic4 {
+        right: 180px;
+        top: 212px;
+    }
+    .integration .integration-content .integration-content__graphic5 {
+        right: 5px;
+        top: 5px;
+    }
+    .integration .integration-content .integration-content__graphic6 {
+        left: 2px;
+        top: 123px;
+    }
+    .integration .integration-content .integration-content__graphic7 {
+        top: 426px;
+        right: 5px;
+    }
+}
+
+@media (max-width: 700px) {
+    .integration {
+        grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+    }
+    .integration .integration-ellipse {
+        display: none;
+    }
+    .integration .integration-content {
+        height: 265px;
+    }
+    .integration .integration-content .integration-content__graphic1 {
+        display: none;
+    }
+    .integration .integration-content .integration-content__graphic2 {
+        max-width: 95.57px;
+        left: 0px;
+        top: 142px;
+    }
+    .integration .integration-content .integration-content__graphic3 {
+        max-width: 90.95px;
+        left: 159px;
+        top: 52px;
+    }
+    .integration .integration-content .integration-content__graphic4 {
+        max-width: 90.95px;
+        left: 100px;
+        top: 113px;
+    }
+    .integration .integration-content .integration-content__graphic5 {
+        max-width: 95.62px;
+        right: 40px;
+        top: 5px;
+    }
+    .integration .integration-content .integration-content__graphic6 {
+        max-width: 109.43px;
+        left: 2px;
+        top: 71px;
+    }
+    .integration .integration-content .integration-content__graphic7 {
+        max-width: 230px;
+        top: 193px;
+        right: 5px;
+    }
+}

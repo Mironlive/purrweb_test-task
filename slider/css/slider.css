@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background-color: rgb(149 232 255 / 13%);
+}
+
+.container {
+    margin: 50px auto 0 auto;
+    padding: 0 30px;
+    max-width: 850px;
+}
+
+.slider {
+    display: block;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.slider-container {
+    display: block;
+    overflow: hidden;
+}
+
+.slider__band {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.slider__item {
+    flex: 1 0 100%;
+    max-width: 795px;
+}
+
+.item-content {
+    margin: 0 20px;
+    display: block;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(58, 156, 221);
+}
+
+.button {
+    position: absolute;
+    padding: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 60px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.button::before {
+    position: absolute;
+    bottom: 20px;
+    content: '';
+    background-color: #ffffff;
+    width: 25px;
+    height: 7px;
+    border-radius: 4px;
+}
+
+.button::after {
+    position: absolute;
+    top: 20px;
+    content: '';
+    background-color: #ffffff;
+    width: 25px;
+    height: 7px;
+    border-radius: 4px;
+}
+
+.button-left {
+    left: 0;
+}
+
+.button-left::before {
+    left: 10px;
+    transform: rotate(45deg);
+}
+
+.button-left::after {
+    left: 10px;
+    transform: rotate(-45deg);
+}
+
+.button-right {
+    right: 0;
+}
+
+.button-right::before {
+    right: 10px;
+    transform: rotate(-45deg);
+}
+
+.button-right::after {
+    right: 10px;
+    transform: rotate(45deg);
+}
+
+.dots {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    z-index: 3;
+}
+
+.dots__item {
+    margin: 0 15px;
+    background-color: rgba(72, 161, 167, 0.283);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.dots__item:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.dots__item_active {
+    background-color: rgb(17, 150, 160);
+}

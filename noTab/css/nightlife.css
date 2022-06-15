@@ -1,0 +1,170 @@
+        .nightlife {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding-top: 222px;
+        }
+        
+        .nightlife .nightlife-background {
+            display: flex;
+            position: relative;
+            width: 100%;
+        }
+        
+        .nightlife .nightlife-background .nightlife-background__dj {
+            width: 50%;
+        }
+        
+        .nightlife .nightlife-background .nightlife-background__coctail {
+            z-index: 2;
+            right: 0;
+            width: 50%;
+        }
+        
+        .nightlife .nightlife-background .nightlife-background__blure {
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            height: 101%;
+            object-fit: cover;
+        }
+        
+        .nightlife .nightlife-background .nightlife-background__label {
+            right: 100px;
+            position: absolute;
+            z-index: 2;
+        }
+        
+        .nightlife .nightlife-body {
+            position: relative;
+            z-index: 3;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-top: -500px;
+        }
+        
+        .nightlife .nightlife-body .nightlife-body__phone1 {
+            padding: 80px;
+            margin-bottom: 400px;
+        }
+        
+        .nightlife .nightlife-body .nightlife-body__phone2 {
+            margin-top: 300px;
+        }
+        
+        .nightlife .nightlife-body .nightlife-info {
+            padding-left: 50px;
+            padding-right: 50px;
+            max-width: 425px;
+        }
+        
+        .nightlife .nightlife-body .nightlife-info .nightlife-info-buttons {
+            display: flex;
+            align-items: center;
+            gap: 27.97px;
+            padding-top: 58px;
+        }
+        
+        .nightlife .nightlife-body .nightlife-body-image {
+            margin-left: 100px;
+            position: relative;
+        }
+        
+        .nightlife .nightlife-body .nightlife-body-image .nightlife-body__coctail {
+            position: relative;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+        
+        .nightlife .nightlife-body .nightlife-body-image .nightlife-body__label {
+            position: absolute;
+            width: 30%;
+            left: -10%;
+            top: 35%;
+        }
+        
+        @media (max-width: 1350px) {
+            .nightlife .nightlife-body .nightlife-body__phone1 {
+                padding: 80px;
+                margin-bottom: 0px;
+            }
+            .nightlife .nightlife-body .nightlife-body__phone2 {
+                margin-top: 0px;
+            }
+        }
+        
+        @media (max-width: 1250px) {
+            .nightlife .nightlife-body .nightlife-body__phone1 {
+                padding: 60px;
+                margin-bottom: 0px;
+            }
+            .nightlife .nightlife-body .nightlife-body__phone2 {
+                margin-top: 0px;
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .nightlife .nightlife-body {
+                margin-top: -150px;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .nightlife .nightlife-body .nightlife-info .nightlife-info-buttons {
+                display: flex;
+                gap: 28px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nightlife .nightlife-background .nightlife-background__dj {
+                width: 100%;
+            }
+            .nightlife .nightlife-background .nightlife-background__coctail {
+                display: none;
+            }
+            .nightlife .nightlife-background .nightlife-background__label {
+                display: none;
+            }
+            .nightlife .nightlife-body .nightlife-body__phone1 {
+                padding: 50px;
+                z-index: 1;
+                margin-top: -150px;
+            }
+            .nightlife .nightlife-body .nightlife-body-image {
+                margin-left: 0px;
+                width: 100%;
+                position: relative;
+            }
+            .nightlife .nightlife-body .nightlife-body-image .nightlife-body__label {
+                position: absolute;
+                width: 18%;
+                left: 10%;
+                top: 45%;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .nightlife .nightlife-body .nightlife-body-image {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 585px) {
+            .nightlife .nightlife-body .nightlife-info .nightlife-info-buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                margin: 0 auto;
+            }
+            .nightlife .nightlife-body .nightlife-info .nightlife-info-buttons img {
+                max-width: 185px;
+                width: 100%;
+            }
+            .nightlife .nightlife-body .nightlife-info {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+        }
